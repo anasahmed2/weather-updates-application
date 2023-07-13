@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/the-storm-is-near-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    transition: all .4s ease-in-out;
+    border: 2px solid #000;
+}
+
+.first-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    transition: all .4s ease-in-out;
+
+}
+
+
+.input-main {
+    width: 90%;
+    height: auto;
+    background-color: #ffffff96;
+    margin: 0 auto;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-search {
+    width: 80%;
+    height: auto;
+}
+
+.input-search input {
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 10px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: black ! important;
+    text-shadow: none;
+    transition: all .4s ease-in-out;
+}
+
+.input-btn {
+    width: 19.5%;
+    height: auto;
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+.input-btn button {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.input-btn i:hover {
+    text-shadow: 2px 2px 1.5rem #000 !important;
+    transition: .4s;
+}
+
+.location-heading {
+    width: 90%;
+    height: auto;
+    font-family: sans-serif;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.location-heading h1 {
+    margin: 10px 5px 5px 5px;
+}
+
+.location-heading p {
+    margin: 0px 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.tempurature-main {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    transition: all .4s ease-in-out;
+}
+
+.tempurature {
+    width: 49%;
+    height: auto;
+    padding: 5px 20px;
+}
+
+.tempurature-rigth {
+    text-align: right;
+}
+
+.tempurature-left {
+    text-align: left;
+}
+
+.clouds-img {
+    width: 175px;
+    height: 123px;
+}
+
+.matrix {
+    margin: 5px;
+    padding-left: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.celceis {
+    margin: 0;
+    font-size: 100px;
+}
+
+
+.kelvin-f {
+    margin: 0 10px 0px 0px;
+    font-size: 25px;
+
+}
+
+.system-detail {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.detail {
+    width: 32%;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.matrix-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 30px 30px 10px 10px;
+    border-top: 2px solid #000;
+}
+
+.times {
+    width: 93%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #000;
+    padding-top: 10px;
+    overflow-x: scroll;
+}
+
+.bullets {
+    min-width: 50px;
+    height: 90px;
+    border: 2px solid #000;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(3, 3, 3);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(7, 7, 7);
+    border-radius: 10px;
+}
+
+.bullets p {
+    margin: 0px 0px 2px 0px;
+    font-size: 10px;
+}
+
+.hours-heading {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: #000;
+}
+
+.hours-heading h3 {
+    margin: 0;
+}
+
+@media screen and (max-width:1110px) {
+    .detail {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .main-container {
+        width: 90%;
+    }
+
+    .detail {
+        width: 44%;
+    }
+
+    .tempurature-main {
+        width: 100%;
+    }
+}
+
+/* alert */
+
+.swal2-modal {
+    border: 2px solid #fff !important;
+    background-color: #0000009d !important;
+    font-family: sans-serif!important;
+}
+.swal2-x-mark-line-left,.swal2-x-mark-line-right{
+
+    background-color: red !important;
+}
+.swal2-error{
+    background-color: #0000009d!important;
+    color: #b33030!important;
+    border-color: red!important;
+}
+
+.swal2-icon--error {
+    border-color: #530f0f !important;
+}
+
+.swal2-title {
+    color: #fff !important;
+}
+
+.swal2-text {
+    color: #fff !important;
+}
+
+.swal2-footer {
+    text-align: center !important;
+    margin-top: 5px !important;
+}
+
+.swal2-confirm {
+    background-color: transparent !important;
+    border: 2px solid #fff !important;
+    color: #fff !important;
+    width: 150px !important;
+    background-color: #00000004!important;
+}
+
+.swal2-confirm:not([disabled]):hover {
+    background-color:#0000!important;
+    color: #FFF !important;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #000;
+    transition: .4s!important;
+}
+
+@media screen and (max-width : 750px) {
+.detail{
+    width: 47%;
+}    
+}
+
+@media screen and (max-width : 550px) {
+    
+    .tempurature {
+        width: 90%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .clouds-img {
+        width: 100%;
+    }
+
+    .main-container {
+        width: 98%;
+    }
+
+    .detail {
+        width: 98%;
+    }
+
+    .matrix {
+        padding-left: 0;
+    }
+
+    .first-container {
+        padding: 10px;
+    }
+}

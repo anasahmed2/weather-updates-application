@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css">
+<link rel="icon" href="images/extreme-snow-rain.svg">
+</head>
+
+<body id="main">
+
+    <div class="main-container">
+        <div class="first-container">
+            <div class="input-main">
+                <div class="input-search" id="searchbar">
+                    <input type="text" placeholder="Search city..." id="cityScearh">
+                </div>
+                <div class="input-btn"><button onclick="currentforcast()"><i
+                            class="fa-solid fa-magnifying-glass"></i></button></div>
+            </div>
+            <div class="location-heading">
+                <h1 class="animate__animated animate__slideInUp" id="location"></h1>
+                <p class="animate__animated animate__zoomIn" id="date"></p>
+            </div>
+            <div class="tempurature-main">
+                <div class="tempurature tempurature-left">
+                    <div class="clouds-img">
+                        <img class="animate__animated animate__zoomIn" id="matrixset" src="" alt="" width="160px">
+                    </div>
+                    <p class="matrix animate__animated animate__slideInUp" id="matrix"> </p>
+                </div>
+                <div class="tempurature tempurature-rigth">
+                    <h1 class="celceis animate__animated animate__slideInUp" id="celceis"> </h1>
+                    <p class="kelvin-f animate__animated animate__zoomIn" id="kel-fer"></p>
+                </div>
+            </div>
+            <div class="system-detail animate__animated animate__zoomIn">
+                <div class="detail  animate__animated animate__zoomIn">
+                    <div class="matrix-icons"><img src="images/humidity.svg" alt="" width="39px"> Humidity</div>
+                    <div id="Humidity"></div>
+                </div>
+                <div class="detail animate__animated animate__zoomIn">
+                    <div class="matrix-icons"><img src="images/wind-snow.svg" alt="" width="39px"> winds</div>
+                    <div id="winds"></div>
+                </div>
+                <div class="detail animate__animated animate__zoomIn">
+                    <div class="matrix-icons"><img src="images/cloudy.svg" alt="" width="39px"> clouds</div>
+                    <div id="clouds"></div>
+                </div>
+                <div class="detail animate__animated animate__zoomIn">
+                    <div class="matrix-icons"><img src="images/feelslike.svg" alt="" width="39px"> Feel like</div>
+                    <div id="feelLike"></div>
+                </div>
+                <div class="detail animate__animated animate__zoomIn">
+                    <div class="matrix-icons"><img src="images/perssure.gif" alt="" width="39px"> pressure</div>
+                    <div id="pressure"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="second-container">
+            <div class="hours-heading animate__animated animate__slideInUp">
+                <h3>Hourly forecast</h3>
+            </div>
+            <div class="times">
+                <div class="bullets ">
+                    <p>7am</p>
+                    <img src="images/extreme-clouds.svg" alt="">
+                    <p>30°</p>
+                </div>
+                <div class="bullets">
+                    <p>8pm</p>
+                    <img src="images/cloudy.svg" alt="">
+                    <p>32°</p>
+                </div>
+                <div class="bullets">
+                    <p>10pm</p>
+                    <img src="images/few-clouds.svg" alt="">
+                    <p>32°</p>
+                </div>
+                <div class="bullets">
+                    <p>12pm</p>
+                    <img src="images/sun.svg" alt="">
+                    <p>35°</p>
+                </div>
+                <div class="bullets">
+                    <p>1pm</p>
+                    <img src="images/sun.svg" alt="">
+                    <p>35°</p>
+                </div>
+                <div class="bullets">
+                    <p>3pm</p>
+                    <img src="images/few-clouds.svg" alt="">
+                    <p>34°</p>
+                </div>
+                <div class="bullets">
+                    <p>5pm</p>
+                    <img src="images/extreme-clouds.svg" alt="">
+                    <p>30°</p>
+                </div>
+                <div class="bullets">
+                    <p>6pm</p>
+                    <img src="images/extreme-clouds.svg" alt="">
+                    <p>27°</p>
+                </div>
+                <div class="bullets">
+                    <p>7pm</p>
+                    <img src="images/extreme-clouds.svg" alt="">
+                    <p>26°</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js"></script>
+    <script src="javascript/app.js"></script>
+</body>
+
+</html>
